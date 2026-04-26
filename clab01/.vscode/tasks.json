@@ -1,0 +1,14 @@
+{
+    "type": "process",
+    "command": "powershell.exe",
+    "args": [
+        "-NoProfile",
+        "-NonInteractive",
+        "-Command",
+        "chcp 65001 | Out-Null; & g++ -Wall -Wextra -g3 \\\\wsl.localhost\\Ubuntu\\home\\a503218231\\cv-course\\clab01\\src\\main.cpp -o \\\\wsl.localhost\\Ubuntu\\home\\a503218231\\cv-course\\clab01\\src\\output\\main.exe; exit $LASTEXITCODE"
+    ],
+    "problemMatcher": [
+        "$gcc"
+    ],
+    "label": "C/C++ Compile Run: Compile"
+}
